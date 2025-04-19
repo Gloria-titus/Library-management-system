@@ -24,14 +24,12 @@ This project consists of two parts:
    
    mysql -u [username] -p < question1/library.sql
 
-API Setup
-Install Python 3.7+
+### API Setup
+1.Install Python 3.7+
 
-Install dependencies:
+2.Install dependencies:
 
+ pip install fastapi uvicorn mysql-connector-python pydantic
+3.Run the API:
 
-pip install fastapi uvicorn mysql-connector-python pydantic
-Run the API:
-
-
-python question2/book_management_api.py
+ python question2/book_management_api.py
