@@ -30,6 +30,7 @@ This project consists of two parts:
 2.Install dependencies:
 
  pip install fastapi uvicorn mysql-connector-python pydantic
+ 
 3.Run the API:
 
  python question2/book_management_api.py
