@@ -29,4 +29,5 @@ A complete database system and CRUD API for managing library operations.
 
 
 
+![Library ERD](https://raw.githubusercontent.com/Gloria-titus/Library-management-system/main/library-erd.png)
 
