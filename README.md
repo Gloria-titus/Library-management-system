@@ -22,15 +22,11 @@ A complete database system and CRUD API for managing library operations.
 2. Execute the SQL script:
    ```bash
    mysql -u [username] -p < question1/library.sql
-
-API Setup
-Install Python 3.7+
-
-Install dependencies:
-
-
-pip install fastapi uvicorn mysql-connector-python pydantic
-Run the API:
+   ```
+3. Replace `[username]` with your MySQL username
+4. Enter your MySQL password when prompted
+5. The database will be created with the necessary tables and relationships
 
 
-python question2/book_management_api.py
+
+
