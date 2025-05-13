@@ -23,4 +23,14 @@ A complete database system and CRUD API for managing library operations.
    ```bash
    mysql -u [username] -p < question1/library.sql
 
+API Setup
+Install Python 3.7+
 
+Install dependencies:
+
+
+pip install fastapi uvicorn mysql-connector-python pydantic
+Run the API:
+
+
+python question2/book_management_api.py
