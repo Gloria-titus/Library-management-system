@@ -51,36 +51,5 @@ CREATE TABLE borrowing_records (
     FOREIGN KEY (book_id) REFERENCES books(book_id) ON DELETE CASCADE
     );
 
--- Sample data for authors
-INSERT INTO authors (first_name, last_name) VALUES
-('George', 'Orwell'),
-('J.K.', 'Rowling'),
-('Stephen', 'King');
-
--- Sample data for publishers
-INSERT INTO publishers (name, address, phone, email, website) VALUES
-('Penguin Books', '80 Strand, London, UK', '+44 20 7010 3000', 'info@penguin.co.uk', 'www.penguin.co.uk'),
-('Scholastic', '557 Broadway, New York, NY, USA', '+1 212 343-6100', 'info@scholastic.com', 'www.scholastic.com'),
-('Simon & Schuster', '1230 Avenue of the Americas, New York, NY, USA', '+1 212 698-7000', 'info@simonandschuster.com', 'www.simonandschuster.com');
-
--- Sample data for books
-INSERT INTO books (title,publication_year,publisher_id, category,available_copies, total_copies) VALUES
-('1984', 1949,1, 'Dystopian',3, 5),
-('Harry Potter and the Philosopher''s Stone',1997, 2, 'Fantasy', 2, 4),
-('The Shining', 1977, 3, 'Horror',1, 3);
-
--- Sample data for book_authors
-INSERT INTO book_authors (book_id, author_id) VALUES
-(1, 1),
-(2, 2),
-(3, 3);
-
--- Sample data for borrowing_records
-INSERT INTO borrowing_records (book_id,borrow_date, due_date, return_date, fine_amount, status) VALUES
-(1, '2023-04-01', '2023-04-15', '2023-04-14', 0.00, 'returned'),
-(2, '2023-04-05', '2023-04-19', NULL, 5.50, 'overdue'),
-(3, '2023-04-10', '2023-04-24', NULL, 0.00, 'borrowed');
-
-
 
 
